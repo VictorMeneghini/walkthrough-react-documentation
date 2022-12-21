@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import ControlledComponentForm from "./components/forms/controlled-component-form";
+import Calculator from "./components/lifting-state-up/Calculator";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Controlled Form component</h1>
+      <ControlledComponentForm> </ControlledComponentForm>
+      <h1>Lifting State Up</h1>
+      <Calculator />
     </div>
   );
 }

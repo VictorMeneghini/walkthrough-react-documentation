@@ -2,6 +2,7 @@
   "name": "react-concepts",
   "version": "0.1.0",
   "private": true,
+  "description": "cluster of tests designed to reinforce react concepts",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
