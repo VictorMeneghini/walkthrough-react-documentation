@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {BoilingVerdict} from './BoilingVerdict'
 
 const scaleNames = {
