@@ -7,7 +7,7 @@ function App() {
       <h1>Controlled Form component</h1>
       <ControlledComponentForm> </ControlledComponentForm>
       <h1>Lifting State Up</h1>
-      <Calculator />
+      <Calculator/>
     </div>
   );
 }
