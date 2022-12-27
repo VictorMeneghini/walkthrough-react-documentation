@@ -1,6 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-import TemperatureInput from "./TemperatureInput";
+const TemperatureInput = React.lazy(() => import('./TemperatureInput'))
 
 function toCelsius(fahrenheit) {
   return (fahrenheit - 32) * 5 / 9;
