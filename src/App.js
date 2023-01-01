@@ -1,8 +1,11 @@
+import {lazy, Suspense} from "react"
+
 import ControlledComponentForm from "./components/forms/controlled-component-form";
 import Calculator from "./components/lifting-state-up/Calculator";
 
 import { ThemeContextProvider } from "./context/ThemedContext";
-import ToolBar from "./components/tool-bar/ToolBar"
+
+const ToolBar = lazy(() => import("./components/tool-bar/ToolBar"))
 
 function App() {
   return (
@@ -13,7 +16,9 @@ function App() {
       <Calculator/>
 
       <ThemeContextProvider >
-        <ToolBar></ToolBar>
+        <Suspense>
+          <ToolBar></ToolBar>
+        </Suspense>
       </ThemeContextProvider>
     </div>
   );
