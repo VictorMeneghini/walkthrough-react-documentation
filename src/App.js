@@ -1,4 +1,5 @@
 import {lazy, Suspense} from "react"
+import { Link, useSearchParams } from "react-router-dom";
 
 import ControlledComponentForm from "./components/forms/controlled-component-form";
 import Calculator from "./components/lifting-state-up/Calculator";
@@ -10,6 +11,13 @@ const ToolBar = lazy(() => import("./components/tool-bar/ToolBar"))
 function App() {
   return (
     <div className="App">
+      <nav>
+        <ul>
+          <li>
+            <Link to={`contact/victor`}>Go to contact</Link>
+          </li>
+        </ul>
+      </nav>
       <h1>Controlled Form component</h1>
       <ControlledComponentForm> </ControlledComponentForm>
       <h1>Lifting State Up</h1>

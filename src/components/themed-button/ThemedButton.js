@@ -5,8 +5,15 @@ const ThemedButton = () => {
   const context = useContext(ThemeContext);
   console.log(context, "a")
 
+  const handleOnClick = () => {
+    context.changeColor("red")
+  }
+
   return (
-    <button style={context.theme} onClick={() => context.changeColor("red")}>Hi, im button using context</button>
+    <button 
+      style={context.theme}
+      onClick={() => handleOnClick()}
+    >Hi, im button using context</button>
   )
 }
 
