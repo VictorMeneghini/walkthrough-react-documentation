@@ -1,5 +1,5 @@
 import {lazy, Suspense} from "react"
-import { Link, useSearchParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import ControlledComponentForm from "./components/forms/controlled-component-form";
 import Calculator from "./components/lifting-state-up/Calculator";
@@ -20,7 +20,7 @@ function App() {
       </nav>
       <h1>Controlled Form component</h1>
       <ControlledComponentForm> </ControlledComponentForm>
-      <h1>Lifting State Up</h1>
+      <h1>Lifting State Up!</h1>
       <Calculator/>
 
       <ThemeContextProvider >

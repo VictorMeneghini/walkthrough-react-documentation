@@ -11,6 +11,9 @@ import {
 import ErrorPage from './components/error-page/ErrorPage';
 import ContactPage from './components/contact-page/ContactPage';
 
+import ComponentUnderTest from "./components/component-to-test/ComponentUnderTest";
+
+
 const router = createBrowserRouter([
   {
     path: "",
@@ -26,6 +29,10 @@ const router = createBrowserRouter([
         element: <div>Show nested router details!</div>
       }
     ]
+  },
+  {
+    path:"/tests",
+    element: <ComponentUnderTest />
   }
 ])
 
