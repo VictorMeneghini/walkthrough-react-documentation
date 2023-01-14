@@ -6,6 +6,7 @@ import Calculator from "./components/lifting-state-up/Calculator";
 import InputComponent from "./components/input/InputComponent"
 
 import { ThemeContextProvider } from "./context/ThemedContext";
+import TryReduce from "./components/component-reduce/TryReduce";
 
 const ToolBar = lazy(() => import("./components/tool-bar/ToolBar"))
 
@@ -33,6 +34,8 @@ function App() {
       <ControlledComponentForm> </ControlledComponentForm>
       <h1>Lifting State Up!</h1>
       <Calculator/>
+
+      <TryReduce />
 
       {/* <input ref={inputRef} /> */}
       <InputComponent ref={inputRef}/>
