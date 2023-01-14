@@ -13,6 +13,8 @@ export const ThemeContextProvider = ({children}) => {
     })
   }
 
+  console.log("render")
+
   return (
     <ThemeContext.Provider value={{
       theme,
